@@ -5,5 +5,5 @@ Features CRUD capabilites using Django backend/builtin database to serve as a RE
 ## Tasks:
 * [x] Create catalog of url patterns
 * [ ] Achieve CRUD functionality using API decorators (function based)
-* [ ] Create data model
-* [ ] Serialize data
+* [x] Create data model
+* [x] Serialize data
