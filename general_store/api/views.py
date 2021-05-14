@@ -24,3 +24,9 @@ def itemList(request):
 	items = Item.objects.all()
 	serializer = ItemSerializer(items, many=True)
 	return Response(serializer.data) # query db, serialize data,return it in response
+
+@api_view(['GET'])
+def itemDetail(request, pk):
+	items = Item.objects.get(id=pk)
+	serializer = ItemSerializer(items, many=False)
+	return Response(serializer.data) 

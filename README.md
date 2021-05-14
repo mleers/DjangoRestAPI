@@ -6,7 +6,7 @@ Features CRUD capabilites using Django backend/builtin database to serve as a RE
 * [x] Create catalog of url patterns
 * [ ] Achieve CRUD functionality using API decorators (function based)
     * [x] Global Get
-    * [ ] instance Get
+    * [x] instance Get
     * [ ] instance Post
     * [ ] instance Put
     * [ ] instance Delete
