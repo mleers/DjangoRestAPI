@@ -10,14 +10,16 @@ from .models import Item
 
 @api_view(['GET'])
 def apiOverview(request):
-    api_urls = {
-	    'List':'/item-list/',
-	    'Detail View':'/item-detail/<str:pk>/',
-	    'Create':'/item-create/',
-	    'Update':'/item-update/<str:pk>/',
-	    'Delete':'/item-delete/<str:pk>/',
-	    }
-    return Response(api_urls)
+	host_url = 'http://' + request.headers['Host']
+
+	api_urls = {
+		'List': host_url + '/api/item-list/',
+		'Detail View': host_url + '/api/item-detail/<str:pk>/',
+		'Create': host_url + '/api/item-create/',
+		'Update': host_url + '/api/item-update/<str:pk>/',
+		'Delete': host_url + '/api/item-delete/<str:pk>/',
+	}
+	return Response(api_urls)
 
 @api_view(['GET'])
 def itemList(request):
