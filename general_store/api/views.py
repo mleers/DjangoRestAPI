@@ -49,3 +49,10 @@ def itemUpdate(request, pk):
 		serializer.save()
 
 	return Response(serializer.data) 
+
+@api_view(['DELETE'])
+def itemDelete(request, pk):
+	item = Item.objects.get(id=pk)
+	item.delete()
+
+	return Response("Item successfully deleted!")
