@@ -14,4 +14,4 @@ Features CRUD capabilites using Django backend/builtin database to serve as a RE
 * [x] Serialize data
 * [x] Add superuser
 
-[] Add basic frontend
+* [ ] Add basic frontend
