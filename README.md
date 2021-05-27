@@ -2,6 +2,28 @@
 
 Features CRUD capabilites using Django backend/builtin database to serve as a RESTful endpoint. Features the [Django Rest Framework](https://www.django-rest-framework.org/) 
 
+## Starting the service
+
+### Requisites:
+* python 3.6+
+* djangorestframework library `pip3 install djangorestframework`
+
+### Locally built:
+#### Windows
+Create virtual environment (optional)
+1. `python -m venv env`
+2. `env\Scripts\python.exe -m pip install -r requirements.txt`
+
+Start here if skipping virtual env
+1. `pip3 install -r requirements.txt`
+2. `python manage.py runserver`
+3. Go to http://localhost:8000/api/ (unless port specified otherwise)
+
+#### Mac
+1. `cd DjangoRestAPI/general_store`
+2. `python3 manage.py runserver`
+3. Go to http://localhost:8000/api/ (unless port specified otherwise)
+
 ## Tasks:
 * [x] Create catalog of url patterns
 * [x] Achieve CRUD functionality using API decorators (function based)
