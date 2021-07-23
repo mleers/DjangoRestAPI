@@ -42,4 +42,4 @@ Start here if skipping virtual env
 * [x] Add superuser
 
 * [ ] Add basic frontend
-* [ ] Dockerize project
+* [x] Dockerize project
