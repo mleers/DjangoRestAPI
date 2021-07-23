@@ -24,6 +24,11 @@ Start here if skipping virtual env
 2. `python3 manage.py runserver`
 3. Go to http://localhost:8000/api/ (unless port specified otherwise)
 
+#### Docker
+*requires docker-compose*
+1. `docker-compose up` from root directory
+2. Go to http://0.0.0.0:8000/api or http://localhost:8000/api
+
 ## Tasks:
 * [x] Create catalog of url patterns
 * [x] Achieve CRUD functionality using API decorators (function based)
@@ -37,3 +42,4 @@ Start here if skipping virtual env
 * [x] Add superuser
 
 * [ ] Add basic frontend
+* [ ] Dockerize project
