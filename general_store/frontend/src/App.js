@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    food_item: []
+  };
+
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/api/item-list/'); // fetch data from django backend
+      const food_item = await res.json();
+      this.setState({
+        food_item
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <h1 class="title">General Store Listings</h1>
+        <h4>Create, update or delete a listing from the backend</h4>
+        {this.state.food_item.map(item => (
+          <div key={item.id}>
+            <h3>{item.name}</h3>
+            <span>{item.price}</span>
+          </div>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default App;
