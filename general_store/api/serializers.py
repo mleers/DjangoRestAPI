@@ -3,6 +3,7 @@ from rest_framework import serializers
 from .models import Item
 
 class ItemSerializer(serializers.ModelSerializer):
+    created_at = serializers.DateTimeField(format='%m/%d/%Y %H:%M:%S')
     class Meta:
         model = Item
-        fields = '__all__'
+        fields = ['id', 'name', 'price', 'in_stock', 'created_at']
