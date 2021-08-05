@@ -22,10 +22,12 @@ class App extends Component {
       <div>
         <h1 class="title">General Store Listings</h1>
         <h4>Create, update or delete a listing from the backend</h4>
+        <hr></hr>
         {this.state.food_item.map(item => (
           <div key={item.id}>
             <h3>{item.name}</h3>
             <span>{item.price}</span>
+            <h6>Added: {item.created_at}</h6>
           </div>
         ))}
       </div>
