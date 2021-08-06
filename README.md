@@ -7,6 +7,8 @@ Features CRUD capabilites using Django backend/builtin database to serve as a RE
 ### Requisites:
 * python 3.6+
 * djangorestframework library `pip3 install djangorestframework`
+* npm/node
+* Docker desktop (if using Docker deployment)
 
 ### Locally built:
 #### Windows
@@ -24,7 +26,13 @@ Start here if skipping virtual env
 2. `python3 manage.py runserver`
 3. Go to http://localhost:8000/api/ (unless port specified otherwise)
 
-#### Docker
+#### Accessing the frontend:
+* `cd cd DjangoRestAPI/general_store/frontend`
+* `npm install`
+* `npm start`
+* Got to http://localhost:3000/ with backend running to see data
+
+### Docker
 *requires docker-compose*
 1. `docker-compose up` from root directory
 2. Go to http://0.0.0.0:8000/api or http://localhost:8000/api
@@ -41,5 +49,5 @@ Start here if skipping virtual env
 * [x] Serialize data
 * [x] Add superuser
 
-* [ ] Add basic frontend
+* [x] Add basic frontend
 * [x] Dockerize project
