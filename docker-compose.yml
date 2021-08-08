@@ -1,10 +1,19 @@
-version: "1.0"
+version: "2.0"
    
 services:
-  web:
+  backend:
     build: .
     command: python /code/general_store/manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
       - "8000:8000"
+
+  frontend:
+    build: ./general_store/frontend
+    depends_on:
+      - backend
+    restart: always
+    ports:
+      - "3000:3000"
+    stdin_open: true
