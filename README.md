@@ -35,7 +35,8 @@ Start here if skipping virtual env
 ### Docker
 *requires docker-compose*
 1. `docker-compose up` from root directory
-2. Go to http://0.0.0.0:8000/api or http://localhost:8000/api
+ * Frontend: http://localhost:3000/ 
+ * Backend: http://0.0.0.0:8000/api or http://localhost:8000/api
 
 ## Tasks:
 * [x] Create catalog of url patterns
