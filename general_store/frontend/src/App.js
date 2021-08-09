@@ -21,7 +21,8 @@ class App extends Component {
     return (
       <div>
         <h1 class="title">General Store Listings</h1>
-        <h4>Create, update or delete a listing from the backend</h4>
+        <h4>Create, update or delete a listing from the <a href="http://localhost:8000/api/">backend</a> or
+         the <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">admin page</a></h4>
         <hr></hr>
         {this.state.food_item.map(item => (
           <div key={item.id}>
