@@ -1,11 +1,13 @@
 # Django RESTful service
 
-Features CRUD capabilites using Django backend/builtin database to serve as a RESTful endpoint. Features the [Django Rest Framework](https://www.django-rest-framework.org/) 
+Full stack project using a simple React frontend and Django backend.  These components can be ran individually or as a multi-container Doceker project.
+
+Features CRUD capabilites using Django backend/builtin database to serve as a RESTful endpoint. Uses the [Django Rest Framework](https://www.django-rest-framework.org/) 
 
 ## Starting the service
 
 ### Requisites:
-* python 3.6+
+* python 3.6+ (tested)
 * djangorestframework library `pip3 install djangorestframework`
 * npm/node
 * Docker desktop (if using Docker deployment)
@@ -27,7 +29,7 @@ Start here if skipping virtual env
 3. Go to http://localhost:8000/api/ (unless port specified otherwise)
 
 #### Accessing the frontend:
-* `cd cd DjangoRestAPI/general_store/frontend`
+* `cd DjangoRestAPI/general_store/frontend`
 * `npm install`
 * `npm start`
 * Got to http://localhost:3000/ with backend running to see data
