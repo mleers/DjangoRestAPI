@@ -1,6 +1,6 @@
 # Django RESTful service
 
-Full stack project using a simple React frontend and Django backend.  These components can be ran individually or as a multi-container Doceker project.
+Full stack project using a simple React frontend and Django backend.  These components can be ran individually or as a multi-container Docker project.
 
 Features CRUD capabilites using Django backend/builtin database to serve as a RESTful endpoint. Uses the [Django Rest Framework](https://www.django-rest-framework.org/) 
 
